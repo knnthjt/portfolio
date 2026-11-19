@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Kenneth James B. Tolentino | IT Support Specialist & Systems Administrator</title>
+    <meta name="description" content="4th-Year BSIT Student | Aspiring IT Support Specialist &amp; Systems Administrator. TESDA NC II Certified in Computer Systems Servicing, Oracle Java Certified, STI College Alabang.">
+    <meta name="keywords" content="Kenneth James Tolentino, Kenneth Tolentino, IT Support, Systems Administrator, TESDA NC II, Computer Systems Servicing, STI College Alabang, Portfolio">
+    <meta name="author" content="Kenneth James B. Tolentino">
+    <meta name="theme-color" content="#0b1120">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kenneth James B. Tolentino — Digital Portfolio">
+    <meta property="og:description" content="4th-Year BSIT Student | Aspiring IT Support Specialist &amp; Systems Administrator">
+    <meta property="og:url" content="http://localhost/Tolentino%20Portfolio/">
+    <meta property="og:site_name" content="Kenneth James Tolentino Portfolio">
+
+    <!-- Preload / Fonts & CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Script to prevent Dark/Light Mode Flicker (FOUT) -->
+    <script>
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('portfolio_theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+</head>
+<body id="top">
+    <!-- Accessible Skip to Content Link -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <!-- Brand / Logo -->
+            <a href="#top" class="brand-logo" aria-label="Kenneth Tolentino Portfolio Home">
+                <span class="logo-avatar" aria-hidden="true">KT</span>
+                <div class="logo-text">
+                    <span class="logo-name">Kenneth Tolentino</span>
+                    <span class="logo-tag">IT Support & Systems</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-desktop" id="nav-desktop" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action Controls -->
+            <div class="header-actions">
+                <!-- Dark / Light Theme Toggle -->
+                <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+                    <span class="theme-icon-sun" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span>
+                    <span class="theme-icon-moon" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+                </button>
+
+                <!-- Quick Resume Button -->
+                <a href="assets/kenneth_james_tolentino_resume.pdf" class="btn btn-sm btn-outline btn-resume-nav" download target="_blank" rel="noopener noreferrer">
+                    <svg class="icon btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>                    <span>Resume</span>
+                </a>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button type="button" class="mobile-toggle-btn" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer" id="mobile-nav" aria-hidden="true">
+            <div class="container mobile-nav-inner">
+                <ul class="mobile-nav-list">
+                    <li><a href="#about" class="mobile-nav-link">About</a></li>
+                    <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                    <li><a href="#education" class="mobile-nav-link">Education</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+                <div class="mobile-nav-cta">
+                    <a href="assets/kenneth_james_tolentino_resume.pdf" class="btn btn-primary btn-block" download target="_blank" rel="noopener noreferrer">
+                        <svg class="icon btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>                        <span>Download Resume (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav-backdrop" id="mobile-backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content">
+
+<!-- =========================================================================
+     HERO SECTION
+========================================================================= -->
+<section class="hero-section" id="hero">
+    <div class="container hero-container">
+        <!-- Hero Content (Left) -->
+        <div class="hero-content">
+            <div class="hero-badge-wrap">
+                <span class="pulse-indicator" aria-hidden="true"></span>
+                <span class="hero-badge">Open for OJT, Internship &amp; Entry-Level Roles</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Kenneth James B. Tolentino</span>
+            </h1>
+
+            <!-- Animated Typing Subtitle -->
+            <div class="hero-subtitle-container" aria-label="Role titles">
+                <span class="hero-subtitle-static">Specializing in</span>
+                <span class="hero-subtitle-dynamic" id="role-typed" data-roles='["IT Support Specialist","Aspiring Systems Administrator","TESDA NC II Certified Technician","QA & System Documentation Lead","BSIT 4th-Year Candidate"]'>
+                    IT Support Specialist                </span>
+                <span class="typing-cursor" aria-hidden="true">|</span>
+            </div>
+
+            <p class="hero-description">
+                Detail-oriented 4th-year Bachelor of Science in Information Technology (BSIT) student at STI College Alabang with hands-on competencies in computer systems servicing, network configuration and packet analysis, Windows OS troubleshooting, and system documentation/QA testing.            </p>
+
+            <!-- Hero Call To Actions -->
+            <div class="hero-actions">
+                <!-- Prominent Download Resume Button -->
+                <a href="assets/kenneth_james_tolentino_resume.pdf" class="btn btn-primary btn-lg btn-download-resume" download="Kenneth_James_Tolentino_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>                    <span>Download Resume (PDF)</span>
+                </a>
+
+                <a href="#projects" class="btn btn-outline btn-lg">
+                    <span>View Projects</span>
+                    <svg class="icon btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>                </a>
+
+                <a href="#contact" class="btn btn-ghost btn-lg">
+                    <svg class="icon btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>                    <span>Contact Me</span>
+                </a>
+            </div>
+
+            <!-- Hero Meta Badges & Social Links -->
+            <div class="hero-meta">
+                <div class="hero-meta-item">
+                    <svg class="icon meta-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>                    <span>Muntinlupa City, Philippines</span>
+                </div>
+                <div class="hero-meta-divider" aria-hidden="true">|</div>
+                <div class="hero-meta-item">
+                    <svg class="icon meta-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>                    <span>STI College Alabang (4th Year)</span>
+                </div>
+                <div class="hero-meta-divider" aria-hidden="true">|</div>
+                <div class="hero-social-links">
+                    <a href="https://github.com/knnthjt" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+                        <svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>                    </a>
+                    <a href="https://linkedin.com/in/kenneth-james-tolentino-b1217a442" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                        <svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>                    </a>
+                    <a href="mailto:kennethjames.tolentino@example.com" class="social-icon-btn" aria-label="Send Email" title="Email">
+                        <svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Visual Diagnostic Card (Right) -->
+        <div class="hero-visual">
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <div class="terminal-title">Windows PowerShell — Diagnostic Profile</div>
+                    <div class="terminal-badge">SYSADMIN // QA</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="cmd-line">
+                        <span class="cmd-prompt">PS C:\Users\kenneth&gt;</span>
+                        <span class="cmd-text">Get-CandidateSummary -Identity "Kenneth James B. Tolentino"</span>
+                    </div>
+                    <div class="cmd-output">
+                        <div class="cmd-keyval"><span class="k">Academic Status:</span> <span class="v status-val">4th Year BSIT Senior @ STI College Alabang</span></div>
+                        <div class="cmd-keyval"><span class="k">Primary Track:</span> <span class="v">IT Support &amp; Systems Administration</span></div>
+                        <div class="cmd-keyval"><span class="k">Certifications:</span> <span class="v cert-val">TESDA NC II (CSS), Oracle Java Fundamentals</span></div>
+                        <div class="cmd-keyval"><span class="k">Diagnostics:</span> <span class="v">DISM, SFC, PowerShell, Wireshark, Hardware Bench</span></div>
+                        <div class="cmd-keyval"><span class="k">Capstone Role:</span> <span class="v highlight-val">QA &amp; System Documentation Lead (Lumina LMS)</span></div>
+                    </div>
+
+                    <div class="cmd-line cmd-mt">
+                        <span class="cmd-prompt">PS C:\Users\kenneth&gt;</span>
+                        <span class="cmd-text">Test-Connection -Target "RecruiterAvailability" -Quiet</span>
+                    </div>
+                    <div class="cmd-output">
+                        <div class="cmd-success">
+                            <span class="success-glyph">&#x2714;</span> True &mdash; Ready for Technical Support, Systems Admin, or QA Roles
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-footer">
+                    <span class="terminal-stat"><span class="terminal-status-light"></span> Host Online</span>
+                    <span class="terminal-stat">Uptime: 99.9%</span>
+                    <span class="terminal-stat">Zone: Metro Manila, PH</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     ABOUT SECTION
+========================================================================= -->
+<section class="section about-section" id="about">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Profile Overview</div>
+            <h2 class="section-title">About Kenneth James</h2>
+            <p class="section-subtitle">
+                Blending hands-on computer systems servicing, network packet diagnostics, and disciplined QA documentation leadership.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <!-- Left: Biography & Philosophy -->
+            <div class="about-bio-card card">
+                <h3 class="card-title">Professional Background</h3>
+                <p class="lead-text">Detail-oriented 4th-year Bachelor of Science in Information Technology (BSIT) student at STI College Alabang with hands-on competencies in computer systems servicing, network configuration and packet analysis, Windows OS troubleshooting, and system documentation/QA testing.</p>
+                                    <p class="body-text">Driven by a passion for dependable IT infrastructure and user-centric technical support, I combine structured academic foundations with practical technical expertise. My background spans hands-on hardware diagnostics, OS deployment, network protocol analysis, and enterprise system administration fundamentals.</p>
+                                    <p class="body-text">In my academic and capstone journey, I have led technical documentation, drafted Software Requirements Specifications (SRS), and spearheaded quality assurance verification across complex multi-user workflows. I thrive in high-accountability environments where uptime, data integrity, and methodical root-cause troubleshooting are mission-critical.</p>
+                
+                <div class="about-quick-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Education:</span>
+                        <span class="spec-value">BSIT, STI College Alabang (Senior, 4th Year)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Certifications:</span>
+                        <span class="spec-value">TESDA NC II (CSS) &bull; Oracle Java Fundamentals</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Location:</span>
+                        <span class="spec-value">Barangay Cupang, Muntinlupa City, Metro Manila, Philippines</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Availability:</span>
+                        <span class="spec-value status-open">Immediately Open for OJT &amp; Opportunities</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: 4 Focus Pillars -->
+            <div class="about-pillars-grid">
+                                    <div class="pillar-card card">
+                        <div class="pillar-icon-box" aria-hidden="true">
+                            <svg class="icon pillar-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>                        </div>
+                        <div class="pillar-content">
+                            <h4 class="pillar-title">Systems &amp; Diagnostics</h4>
+                            <p class="pillar-desc">Skilled in component-level hardware repair, OS provisioning, and low-level Windows command-line triage (DISM, SFC, PowerShell, diskpart).</p>
+                        </div>
+                    </div>
+                                    <div class="pillar-card card">
+                        <div class="pillar-icon-box" aria-hidden="true">
+                            <svg class="icon pillar-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 8v4"/></svg>                        </div>
+                        <div class="pillar-content">
+                            <h4 class="pillar-title">Networking &amp; Traffic Analysis</h4>
+                            <p class="pillar-desc">Configuring LAN/WAN, routing, DHCP/DNS services, with practical packet inspection using Wireshark and A-Packets.</p>
+                        </div>
+                    </div>
+                                    <div class="pillar-card card">
+                        <div class="pillar-icon-box" aria-hidden="true">
+                            <svg class="icon pillar-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>                        </div>
+                        <div class="pillar-content">
+                            <h4 class="pillar-title">QA &amp; Documentation Lead</h4>
+                            <p class="pillar-desc">Experienced in formulating formal requirements matrices, role-based access models, and QR-scanning verification tests.</p>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+
+        <!-- Metric Counters / Stats Grid -->
+        <div class="stats-grid">
+                            <div class="stat-card">
+                    <div class="stat-value">4th</div>
+                    <div class="stat-label">Year BSIT Student</div>
+                    <div class="stat-sub">STI College Alabang</div>
+                </div>
+                            <div class="stat-card">
+                    <div class="stat-value">2+</div>
+                    <div class="stat-label">Major Certifications</div>
+                    <div class="stat-sub">TESDA NC II &amp; Oracle Java</div>
+                </div>
+                            <div class="stat-card">
+                    <div class="stat-value">4+</div>
+                    <div class="stat-label">Technical Projects</div>
+                    <div class="stat-sub">Capstone &amp; Real-World Systems</div>
+                </div>
+                            <div class="stat-card">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Troubleshooting Mindset</div>
+                    <div class="stat-sub">Methodical &amp; Documented</div>
+                </div>
+                    </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     TECHNICAL SKILLS SECTION (With Interactive Category Tabs)
+========================================================================= -->
+<section class="section skills-section" id="skills">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Core Competencies</div>
+            <h2 class="section-title">Technical &amp; Professional Skills</h2>
+            <p class="section-subtitle">
+                Filter across IT systems servicing, networking infrastructure, enterprise administration, and professional workflows.
+            </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skill categories">
+                            <button type="button" 
+                        class="skill-filter-btn active" 
+                        data-filter="all" 
+                        role="tab"
+                        aria-selected="true">
+                    <span>All Skills</span>
+                    <span class="filter-count" data-count-for="all">
+                        10                    </span>
+                </button>
+                            <button type="button" 
+                        class="skill-filter-btn " 
+                        data-filter="it_systems" 
+                        role="tab"
+                        aria-selected="false">
+                    <span>IT Support &amp; Systems</span>
+                    <span class="filter-count" data-count-for="it_systems">
+                        5                    </span>
+                </button>
+                            <button type="button" 
+                        class="skill-filter-btn " 
+                        data-filter="networking_cloud" 
+                        role="tab"
+                        aria-selected="false">
+                    <span>Networking &amp; Cloud</span>
+                    <span class="filter-count" data-count-for="networking_cloud">
+                        2                    </span>
+                </button>
+                            <button type="button" 
+                        class="skill-filter-btn " 
+                        data-filter="soft_skills" 
+                        role="tab"
+                        aria-selected="false">
+                    <span>Professional &amp; Soft Skills</span>
+                    <span class="filter-count" data-count-for="soft_skills">
+                        3                    </span>
+                </button>
+                    </div>
+
+        <!-- Dynamic Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+                            <div class="skill-card card" data-category="it_systems">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TESDA NC II</span>
+                            <span class="skill-level">Certified / Advanced</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">Computer Systems Servicing</h3>
+                    <p class="skill-desc">Hardware teardown, board diagnostics, peripheral configuration, thermal management, and power supply verification.</p>
+                </div>
+                            <div class="skill-card card" data-category="it_systems">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Hardware</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">Hardware Diagnostics &amp; Repair</h3>
+                    <p class="skill-desc">Component isolation (RAM, CPU, GPU, storage), POST code diagnostics, multimeter testing, and parts replacement.</p>
+                </div>
+                            <div class="skill-card card" data-category="it_systems">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SysAdmin</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">Windows Administration</h3>
+                    <p class="skill-desc">PowerShell scripting, Command Prompt automation, DISM repair, System File Checker (SFC), and diskpart volume management.</p>
+                </div>
+                            <div class="skill-card card" data-category="it_systems">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Deployment</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">OS Installation &amp; Configuration</h3>
+                    <p class="skill-desc">Clean Windows and Linux provisioning, dual-boot configuration, driver packages, UEFI/BIOS setup, and unattended images.</p>
+                </div>
+                            <div class="skill-card card" data-category="it_systems">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ERP / Enterprise</span>
+                            <span class="skill-level">Foundational</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">SAP System Administration (Basic &amp; Advanced)</h3>
+                    <p class="skill-desc">SAP enterprise modules overview, user authorization profiles, transaction code navigation, and basic admin workflows.</p>
+                </div>
+                            <div class="skill-card card" data-category="networking_cloud">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Cloud</span>
+                            <span class="skill-level">Foundational</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">AWS Cloud Fundamentals</h3>
+                    <p class="skill-desc">Virtual Private Cloud (VPC), EC2 instance provisioning, RDS managed databases, S3 storage buckets, and IAM policy basics.</p>
+                </div>
+                            <div class="skill-card card" data-category="networking_cloud">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Protocols</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">Network Protocols (TCP/IP, DNS, DHCP)</h3>
+                    <p class="skill-desc">IPv4/IPv6 addressing, subnet masking, default gateways, static IP reservations, NAT translation, and port forwarding.</p>
+                </div>
+                            <div class="skill-card card" data-category="soft_skills">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Core Strength</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">Technical &amp; Documentation Writing</h3>
+                    <p class="skill-desc">Drafting formal SRS documents, standard operating procedures (SOPs), QA test plans, and bug tracking reports.</p>
+                </div>
+                            <div class="skill-card card" data-category="soft_skills">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Execution</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">Time Management &amp; Prioritization</h3>
+                    <p class="skill-desc">Prioritizing critical incidents, meeting project milestones, and delivering structured outputs on schedule.</p>
+                </div>
+                            <div class="skill-card card" data-category="soft_skills">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <svg class="icon skill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Growth Mindset</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <h3 class="skill-name">Adaptability &amp; Continuous Learning</h3>
+                    <p class="skill-desc">Quickly learning new tech stacks, OS platforms, and cloud utilities while keeping skills aligned with industry shifts.</p>
+                </div>
+                    </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     CERTIFICATIONS SECTION
+========================================================================= -->
+<section class="section certifications-section" id="certifications">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Credentials &amp; Standards</div>
+            <h2 class="section-title">Professional Certifications</h2>
+            <p class="section-subtitle">
+                Officially accredited competencies verifying hands-on hardware/network systems servicing and software fundamentals.
+            </p>
+        </div>
+
+        <div class="certifications-grid">
+                            <div class="cert-card card">
+                    <div class="cert-card-header">
+                        <div class="cert-badge-pill accent-blue">
+                            <svg class="icon cert-badge-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>                            <span>TESDA Certified</span>
+                        </div>
+                        <span class="cert-status-badge">&#x2713; Verified</span>
+                    </div>
+
+                    <div class="cert-body">
+                        <h3 class="cert-title">TESDA National Certificate II (NC II)</h3>
+                        <div class="cert-specialization">Computer Systems Servicing</div>
+                        <div class="cert-issuer">
+                            <svg class="icon issuer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>                            <span>Technical Education and Skills Development Authority (TESDA)</span>
+                        </div>
+
+                        <p class="cert-description">Accredited national standard certifying proficiency in installing, configuring, maintaining, and diagnosing computer systems, peripheral devices, networks, and servers.</p>
+
+                        <div class="cert-competencies">
+                            <h4 class="competencies-title">Certified Competencies:</h4>
+                            <ul class="competencies-list">
+                                                                    <li>
+                                        <span class="comp-check" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                        <span>Install and configure computer systems and peripherals</span>
+                                    </li>
+                                                                    <li>
+                                        <span class="comp-check" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                        <span>Set up and maintain computer networks and workgroup servers</span>
+                                    </li>
+                                                                    <li>
+                                        <span class="comp-check" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                        <span>Diagnose, inspect, and repair hardware faults and OS defects</span>
+                                    </li>
+                                                                    <li>
+                                        <span class="comp-check" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                        <span>Perform preventive maintenance, data backups, and security practices</span>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+                            <div class="cert-card card">
+                    <div class="cert-card-header">
+                        <div class="cert-badge-pill accent-amber">
+                            <svg class="icon cert-badge-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>                            <span>Oracle Certified</span>
+                        </div>
+                        <span class="cert-status-badge">&#x2713; Verified</span>
+                    </div>
+
+                    <div class="cert-body">
+                        <h3 class="cert-title">Oracle Java Fundamentals Certification</h3>
+                        <div class="cert-specialization">Object-Oriented Programming &amp; Core Java Architecture</div>
+                        <div class="cert-issuer">
+                            <svg class="icon issuer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>                            <span>Oracle Academy</span>
+                        </div>
+
+                        <p class="cert-description">Demonstrates verified command of object-oriented principles, control structures, encapsulation, inheritance, polymorphism, and Java platform libraries.</p>
+
+                        <div class="cert-competencies">
+                            <h4 class="competencies-title">Certified Competencies:</h4>
+                            <ul class="competencies-list">
+                                                                    <li>
+                                        <span class="comp-check" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                        <span>Object-Oriented Programming (OOP) design patterns</span>
+                                    </li>
+                                                                    <li>
+                                        <span class="comp-check" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                        <span>Algorithm implementation, loops, arrays, and collections</span>
+                                    </li>
+                                                                    <li>
+                                        <span class="comp-check" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                        <span>Robust error handling, debugging, and exception safety</span>
+                                    </li>
+                                                                    <li>
+                                        <span class="comp-check" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                        <span>Modular software design and compile-time validation</span>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     PROJECTS & EXPERIENCE SECTION
+========================================================================= -->
+<section class="section projects-section" id="projects">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Applied Experience</div>
+            <h2 class="section-title">Featured Projects &amp; Leadership</h2>
+            <p class="section-subtitle">
+                Demonstrated leadership in capstone QA verification, community systems analysis, web development, and interactive graphics.
+            </p>
+        </div>
+
+        <div class="projects-list">
+                            <article class="project-card card" id="lumina-lms">
+                    <div class="project-header-bar">
+                        <div class="project-badges">
+                            <span class="project-pill project-pill-role">System Documentation &amp; Quality Assurance (QA) Lead</span>
+                            <span class="project-pill project-pill-type">Capstone Project</span>
+                        </div>
+                        <span class="project-meta-year">2024 – 2025 &bull; STI College Alabang</span>
+                    </div>
+
+                    <div class="project-content-grid">
+                        <!-- Main Left Column -->
+                        <div class="project-main-col">
+                            <h3 class="project-title">Lumina Library Management System</h3>
+                            <h4 class="project-subtitle">STI College Alabang Capstone Project</h4>
+
+                            <p class="project-lead">Authored formal system specifications, functional requirements matrices, user role permission tables, and iterative development documentation, and executed integration/QR-scanning verification testing.</p>
+
+                            <div class="project-block">
+                                <div class="project-block-title">Key Contributions &amp; Methodology:</div>
+                                <ul class="project-points">
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Formulated formal Software Requirements Specifications (SRS) detailing role-based permissions (Admin, Librarian, Student).</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Constructed exhaustive functional requirements matrices and validation test cases for loan workflows.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Engineered and executed integration verification test suites for physical QR-code book identification and student badge scanning.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Facilitated iterative bug triage, regression testing, and sign-off meetings with faculty evaluators.</span>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar Right Column -->
+                        <div class="project-side-col">
+                            <div class="project-impact-box">
+                                <div class="impact-title">Outcome &amp; Impact</div>
+                                <p class="impact-text">Delivered airtight test coverage, zero critical checkout defects upon defense, and a fully standardized system documentation binder praised by the evaluation panel.</p>
+                            </div>
+
+                            <div class="project-tech-box">
+                                <div class="tech-box-title">Technologies &amp; Methodologies</div>
+                                <div class="tech-tags-wrap">
+                                                                            <span class="tech-tag">System QA</span>
+                                                                            <span class="tech-tag">Requirements Matrix</span>
+                                                                            <span class="tech-tag">Documentation</span>
+                                                                            <span class="tech-tag">Integration Testing</span>
+                                                                            <span class="tech-tag">QR-Scanning Verification</span>
+                                                                            <span class="tech-tag">Role-Based Access Control</span>
+                                                                            <span class="tech-tag">UML Diagrams</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                            <article class="project-card card" id="barangay-alabang-preblotter">
+                    <div class="project-header-bar">
+                        <div class="project-badges">
+                            <span class="project-pill project-pill-role">System Analyst &amp; Documentation</span>
+                            <span class="project-pill project-pill-type">Systems Analysis</span>
+                        </div>
+                        <span class="project-meta-year">2024 &bull; Community Workflow Initiative</span>
+                    </div>
+
+                    <div class="project-content-grid">
+                        <!-- Main Left Column -->
+                        <div class="project-main-col">
+                            <h3 class="project-title">Barangay Alabang Pre-Blotter Reporting System</h3>
+                            <h4 class="project-subtitle">Community Kiosk &amp; Incident Documentation</h4>
+
+                            <p class="project-lead">Designed and documented a web-based local pre-blotter workflow and barangay kiosk reporting specification for seamless community incident submission and record keeping.</p>
+
+                            <div class="project-block">
+                                <div class="project-block-title">Key Contributions &amp; Methodology:</div>
+                                <ul class="project-points">
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Mapped existing frontline intake workflows through stakeholder interviews and observation of barangay peacekeepers.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Designed intuitive wireframe specifications for public touch-screen intake kiosks with data privacy safeguards.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Authored complete system process diagrams, data flow models (DFD Level 0 &amp; 1), and user journey maps.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Standardized complaint categorization schemes to speed up officer blotter logging.</span>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar Right Column -->
+                        <div class="project-side-col">
+                            <div class="project-impact-box">
+                                <div class="impact-title">Outcome &amp; Impact</div>
+                                <p class="impact-text">Drafted a blueprint that reduces citizen intake waiting times, eliminates transcription errors, and ensures standard incident archiving.</p>
+                            </div>
+
+                            <div class="project-tech-box">
+                                <div class="tech-box-title">Technologies &amp; Methodologies</div>
+                                <div class="tech-tags-wrap">
+                                                                            <span class="tech-tag">Systems Analysis</span>
+                                                                            <span class="tech-tag">Workflow Design</span>
+                                                                            <span class="tech-tag">Kiosk Specifications</span>
+                                                                            <span class="tech-tag">Data Privacy</span>
+                                                                            <span class="tech-tag">Process Modeling</span>
+                                                                            <span class="tech-tag">Technical Documentation</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                            <article class="project-card card" id="creator-web-platforms">
+                    <div class="project-header-bar">
+                        <div class="project-badges">
+                            <span class="project-pill project-pill-role">Freelance Developer</span>
+                            <span class="project-pill project-pill-type">Freelance</span>
+                        </div>
+                        <span class="project-meta-year">2023 – 2024 &bull; Client Engagements</span>
+                    </div>
+
+                    <div class="project-content-grid">
+                        <!-- Main Left Column -->
+                        <div class="project-main-col">
+                            <h3 class="project-title">Custom Creator Web Platforms &amp; Community Tools</h3>
+                            <h4 class="project-subtitle">Freelance Client Solutions</h4>
+
+                            <p class="project-lead">Built responsive web pages and streaming tools using HTML, CSS, JavaScript, Next.js, and React tailored for digital content creators and online communities.</p>
+
+                            <div class="project-block">
+                                <div class="project-block-title">Key Contributions &amp; Methodology:</div>
+                                <ul class="project-points">
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Developed modern, mobile-first responsive web layouts ensuring cross-browser rendering consistency.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Built custom streaming overlays and interactive browser source components utilizing vanilla JavaScript and React.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Optimized asset loading and core web vitals for smooth rendering during high-traffic broadcast events.</span>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar Right Column -->
+                        <div class="project-side-col">
+                            <div class="project-impact-box">
+                                <div class="impact-title">Outcome &amp; Impact</div>
+                                <p class="impact-text">Successfully deployed interactive creator tools that enhanced community engagement and delivered fast, responsive viewer experiences.</p>
+                            </div>
+
+                            <div class="project-tech-box">
+                                <div class="tech-box-title">Technologies &amp; Methodologies</div>
+                                <div class="tech-tags-wrap">
+                                                                            <span class="tech-tag">React</span>
+                                                                            <span class="tech-tag">Next.js</span>
+                                                                            <span class="tech-tag">JavaScript (ES6+)</span>
+                                                                            <span class="tech-tag">HTML5</span>
+                                                                            <span class="tech-tag">CSS3 Flex/Grid</span>
+                                                                            <span class="tech-tag">Responsive UI</span>
+                                                                            <span class="tech-tag">Streaming Tools</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                            <article class="project-card card" id="graphics-unity-prototypes">
+                    <div class="project-header-bar">
+                        <div class="project-badges">
+                            <span class="project-pill project-pill-role">Interactive Systems Developer</span>
+                            <span class="project-pill project-pill-type">Interactive 3D</span>
+                        </div>
+                        <span class="project-meta-year">2023 – 2024 &bull; Academic &amp; Independent Research</span>
+                    </div>
+
+                    <div class="project-content-grid">
+                        <!-- Main Left Column -->
+                        <div class="project-main-col">
+                            <h3 class="project-title">3D Graphics &amp; Unity Game Prototypes</h3>
+                            <h4 class="project-subtitle">Interactive Simulation &amp; Computer Graphics</h4>
+
+                            <p class="project-lead">Built interactive 3D wireframe scene graphs in Python (PyOpenGL/Pygame) and 2D/3D mechanics in Unity (C#).</p>
+
+                            <div class="project-block">
+                                <div class="project-block-title">Key Contributions &amp; Methodology:</div>
+                                <ul class="project-points">
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Engineered interactive 3D wireframe rendering pipelines in Python using PyOpenGL and Pygame from matrix fundamentals.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Implemented translation, rotation, scaling matrices, and orthographic/perspective camera projections.</span>
+                                        </li>
+                                                                            <li>
+                                            <span class="point-bullet" aria-hidden="true">&rsaquo;</span>
+                                            <span>Programmed responsive character controller physics, state machines, and collision triggers in Unity with C#.</span>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar Right Column -->
+                        <div class="project-side-col">
+                            <div class="project-impact-box">
+                                <div class="impact-title">Outcome &amp; Impact</div>
+                                <p class="impact-text">Solidified deep technical understanding of rendering pipelines, memory utilization, and real-time interactive systems.</p>
+                            </div>
+
+                            <div class="project-tech-box">
+                                <div class="tech-box-title">Technologies &amp; Methodologies</div>
+                                <div class="tech-tags-wrap">
+                                                                            <span class="tech-tag">Python</span>
+                                                                            <span class="tech-tag">PyOpenGL</span>
+                                                                            <span class="tech-tag">Pygame</span>
+                                                                            <span class="tech-tag">Unity Engine</span>
+                                                                            <span class="tech-tag">C#</span>
+                                                                            <span class="tech-tag">3D Math &amp; Vectors</span>
+                                                                            <span class="tech-tag">Computer Graphics</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                    </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     EDUCATION SECTION
+========================================================================= -->
+<section class="section education-section" id="education">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Academic Timeline</div>
+            <h2 class="section-title">Education Background</h2>
+            <p class="section-subtitle">
+                Building a rigorous foundation in Information Technology, system diagnostics, and academic problem-solving.
+            </p>
+        </div>
+
+        <div class="education-timeline">
+                            <div class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true">
+                        <svg class="icon timeline-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>                    </div>
+                    <div class="timeline-card card">
+                        <div class="timeline-meta-row">
+                            <span class="edu-period">2023 – Present (4th Year)</span>
+                            <span class="edu-status-badge">Currently Enrolled (Senior)</span>
+                        </div>
+                        <h3 class="edu-degree">Bachelor of Science in Information Technology (BSIT)</h3>
+                        <div class="edu-institution">
+                            <svg class="icon edu-loc-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>                            <span><strong>STI College Alabang</strong> &mdash; Alabang, Muntinlupa City</span>
+                        </div>
+                        <p class="edu-summary">Undergraduate curriculum specializing in systems servicing, data communications, enterprise database administration, software engineering, and capstone project execution.</p>
+
+                        <div class="edu-coursework-wrap">
+                            <span class="coursework-title">Key Subject Areas:</span>
+                            <div class="coursework-tags">
+                                                                    <span class="coursework-tag">Computer Systems Servicing &amp; Diagnostics</span>
+                                                                    <span class="coursework-tag">Network Management &amp; Data Communications</span>
+                                                                    <span class="coursework-tag">Database Management Systems (SQL / PostgreSQL)</span>
+                                                                    <span class="coursework-tag">Information Assurance &amp; Security</span>
+                                                                    <span class="coursework-tag">Systems Analysis, Design &amp; QA Testing</span>
+                                                                    <span class="coursework-tag">Cloud Architecture &amp; Virtualization</span>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true">
+                        <svg class="icon timeline-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>                    </div>
+                    <div class="timeline-card card">
+                        <div class="timeline-meta-row">
+                            <span class="edu-period">Graduated 2023</span>
+                            <span class="edu-status-badge">Graduated with Honors / Academic Distinction</span>
+                        </div>
+                        <h3 class="edu-degree">Senior High School (SHS)</h3>
+                        <div class="edu-institution">
+                            <svg class="icon edu-loc-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>                            <span><strong>Cupang Senior High School</strong> &mdash; Brgy. Cupang, Muntinlupa City</span>
+                        </div>
+                        <p class="edu-summary">Comprehensive academic program building core fundamentals in technology, mathematics, analytical problem-solving, and professional communication.</p>
+
+                        <div class="edu-coursework-wrap">
+                            <span class="coursework-title">Key Subject Areas:</span>
+                            <div class="coursework-tags">
+                                                                    <span class="coursework-tag">Empowerment Technologies (ICT)</span>
+                                                                    <span class="coursework-tag">Computer Programming Fundamentals</span>
+                                                                    <span class="coursework-tag">Oral &amp; Written Professional Communication</span>
+                                                                    <span class="coursework-tag">Applied Research &amp; Practical Investigations</span>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     CONTACT SECTION
+========================================================================= -->
+<section class="section contact-section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Communication</div>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Inquire about technical support opportunities, systems administration roles, capstone collaboration, or OJT recruitment.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Left Info Panel -->
+            <div class="contact-info-col">
+                <div class="card contact-info-card">
+                    <h3 class="card-title">Contact Channels</h3>
+                    <p class="contact-lead">
+                        I am actively available for technical interviews, IT support roles, and inquiries. Reach out directly or send a message through the form.
+                    </p>
+
+                    <div class="contact-detail-items">
+                        <div class="contact-item">
+                            <div class="contact-icon-box" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            <div class="contact-item-text">
+                                <span class="contact-item-label">Location</span>
+                                <span class="contact-item-value">Barangay Cupang, Muntinlupa City, Metro Manila, Philippines</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-box" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                            <div class="contact-item-text">
+                                <span class="contact-item-label">Direct Email</span>
+                                <a href="mailto:kennethjames.tolentino@example.com" class="contact-link">
+                                    kennethjames.tolentino@example.com                                </a>
+                                <span class="contact-hint">[Email Address: Click to Contact]</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-box" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                            <div class="contact-item-text">
+                                <span class="contact-item-label">Telephone / Mobile</span>
+                                <span class="contact-item-value">+63 (9XX) XXX-XXXX</span>
+                                <span class="contact-hint">[Phone Number: Available on Request]</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-box" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+                            <div class="contact-item-text">
+                                <span class="contact-item-label">LinkedIn</span>
+                                <a href="https://linkedin.com/in/kenneth-james-tolentino-b1217a442" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    kenneth-james-tolentino <svg class="icon inline-ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-box" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+                            <div class="contact-item-text">
+                                <span class="contact-item-label">GitHub</span>
+                                <a href="https://github.com/knnthjt" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    github.com/knnthjt <svg class="icon inline-ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-resume-card">
+                        <div class="crc-icon" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                        <div class="crc-content">
+                            <h4>Looking for a verified copy of my CV?</h4>
+                            <p>Download my comprehensive resume detailing academic achievements and certifications.</p>
+                            <a href="assets/kenneth_james_tolentino_resume.pdf" class="btn btn-sm btn-primary" download target="_blank" rel="noopener noreferrer">
+                                <svg class="icon btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>                                <span>Download Resume (PDF)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-form-col">
+                <div class="card contact-form-card">
+                    <h3 class="card-title">Send a Direct Message</h3>
+                    <p class="form-instructions">Fill in your contact information below. Messages are processed securely.</p>
+
+                    <!-- Non-JS Fallback Alert (if submitted via standard POST) -->
+                    
+                    <!-- Dynamic AJAX Status Box -->
+                    <div id="contact-status-box" class="alert d-none" role="alert" aria-live="polite"></div>
+
+                    <form id="contact-form" action="#contact" method="POST" novalidate>
+                        <!-- Honeypot anti-spam field (hidden from genuine users) -->
+                        <div class="honeypot-field" aria-hidden="true">
+                            <label for="website_hp">Leave this field blank</label>
+                            <input type="text" name="website_hp" id="website_hp" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">
+                                    Your Full Name <span class="required-star">*</span>
+                                </label>
+                                <input type="text" name="name" id="contact-name" class="form-input" placeholder="e.g. Jane Doe" required maxlength="100">
+                                <span class="form-field-error" id="err-name"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">
+                                    Your Email Address <span class="required-star">*</span>
+                                </label>
+                                <input type="email" name="email" id="contact-email" class="form-input" placeholder="e.g. jane@company.com" required maxlength="120">
+                                <span class="form-field-error" id="err-email"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">
+                                Inquiry Subject <span class="required-star">*</span>
+                            </label>
+                            <select name="subject" id="contact-subject" class="form-select" required>
+                                <option value="" disabled selected>Select an inquiry topic...</option>
+                                <option value="IT Support / Helpdesk Opportunity">IT Support / Helpdesk Opportunity</option>
+                                <option value="Junior Systems Administrator Role">Junior Systems Administrator Role</option>
+                                <option value="On-the-Job Training (OJT) / Internship">On-the-Job Training (OJT) / Internship</option>
+                                <option value="QA / System Documentation Project">QA / System Documentation Project</option>
+                                <option value="Freelance Web & Development Inquiry">Freelance Web &amp; Development Inquiry</option>
+                                <option value="General Professional Inquiries">General Professional Inquiries</option>
+                            </select>
+                            <span class="form-field-error" id="err-subject"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">
+                                Message <span class="required-star">*</span>
+                            </label>
+                            <textarea name="message" id="contact-message" class="form-textarea" rows="5" placeholder="Please share details about your role, inquiry, or project..." required maxlength="3000"></textarea>
+                            <div class="textarea-footer">
+                                <span class="form-field-error" id="err-message"></span>
+                                <span class="char-counter" id="char-counter">0 / 3000</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-submit" id="btn-submit">
+                            <span class="btn-spinner d-none" id="btn-spinner" aria-hidden="true"></span>
+                            <span class="btn-text" id="btn-text">
+                                <svg class="icon btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>                                <span>Send Message</span>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top-grid">
+                <!-- Col 1: Bio & Status -->
+                <div class="footer-col footer-col-brand">
+                    <div class="footer-brand">
+                        <span class="logo-avatar" aria-hidden="true">KT</span>
+                        <div>
+                            <h3 class="footer-name">Kenneth James B. Tolentino</h3>
+                            <p class="footer-tagline">4th-Year BSIT Student | Aspiring IT Support Specialist &amp; Systems Administrator</p>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        BSIT senior at STI College Alabang specializing in computer systems servicing, Windows diagnostics, network administration, and quality assurance.
+                    </p>
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Open for OJT, Internship &amp; Entry-Level Roles</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Fast Navigation -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#about">About Overview</a></li>
+                        <li><a href="#skills">Technical Competencies</a></li>
+                        <li><a href="#certifications">Credentials & NC II</a></li>
+                        <li><a href="#projects">Systems & Capstone Projects</a></li>
+                        <li><a href="#education">Academic Background</a></li>
+                        <li><a href="#contact">Contact & Inquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Direct Connect -->
+                <div class="footer-col footer-col-connect">
+                    <h4 class="footer-heading">Connect Directly</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span class="footer-contact-icon" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                            <span>Muntinlupa City, Philippines</span>
+                        </li>
+                        <li>
+                            <span class="footer-contact-icon" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+                            <a href="https://linkedin.com/in/kenneth-james-tolentino-b1217a442" target="_blank" rel="noopener noreferrer">
+                                LinkedIn Profile <svg class="icon inline-ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>                            </a>
+                        </li>
+                        <li>
+                            <span class="footer-contact-icon" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
+                            <a href="https://github.com/knnthjt" target="_blank" rel="noopener noreferrer">
+                                GitHub (knnthjt) <svg class="icon inline-ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>                            </a>
+                        </li>
+                        <li>
+                            <span class="footer-contact-icon" aria-hidden="true"><svg class="icon " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                            <a href="mailto:kennethjames.tolentino@example.com" title="Send Email">
+                                kennethjames.tolentino@example.com                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copy">
+                    &copy; 2026 <strong>Kenneth James B. Tolentino</strong>. All rights reserved.
+                </p>
+                <p class="footer-tech-stack">
+                    Built with vanilla <span>HTML5</span>, <span>CSS3</span>, and <span>JavaScript</span>. Zero external dependencies.
+                </p>
+                <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top of page" title="Back to top">
+                    <span>Back to Top</span>
+                    <svg class="icon rotate-up" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript Core Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
